@@ -1,0 +1,6 @@
+```
+export REDASH_HOST=
+export REDASH_API_KEY=
+export SLACK_BOT_TOKEN=
+export SLACK_SIGNING_SECRET=
+```
