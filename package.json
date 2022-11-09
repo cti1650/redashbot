@@ -2,9 +2,9 @@
   "name": "redashbot",
   "version": "2.0.0",
   "description": "Slack Bot for Redash",
-  "main": ".build/bot.js",
+  "main": ".build/index.js",
   "scripts": {
-    "start": "ts-node bot.ts",
+    "start": "ts-node index.ts",
     "build": "tsc"
   },
   "engines": {
