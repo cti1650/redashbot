@@ -13,5 +13,5 @@
     "rootDir": "./",
     "lib": ["es2015", "dom"]
   },
-  "include": ["src/*.ts", "*.ts"]
+  "include": ["api/*.ts", "src/*.ts", "*.ts"]
 }
