@@ -1,4 +1,5 @@
 import { App, ExpressReceiver } from '@slack/bolt'
+import serverlessExpress from "@vendia/serverless-express";
 import { createApp } from './src/app'
 import { config } from './src/config'
 
@@ -12,6 +13,10 @@ receiver.router.get('/', (_, res) => {
   res.send('ok')
 })
 
-const server = app.start(config.port);
+receiver.router.get('/api', (_, res) => {
+  res.send('ok')
+})
 
-export default server
+module.exports = serverlessExpress({
+  app: receiver.app,
+});

@@ -11,6 +11,7 @@ const app = createApp({ ...config, receiver })
 receiver.router.get('/', (_, res) => {
   res.send('ok')
 })
+
 ;(async () => {
   // Start your app
   await app.start(config.port)
