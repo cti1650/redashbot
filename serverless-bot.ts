@@ -6,8 +6,10 @@ const receiver = new ExpressReceiver({
   signingSecret: config.signingSecret,
 })
 
-export const app = createApp({ ...config, receiver })
+const app = createApp({ ...config, receiver })
 
 receiver.router.get('/', (_, res) => {
   res.send('ok')
 })
+
+export default app;

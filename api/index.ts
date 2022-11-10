@@ -1,3 +1,3 @@
-import { app } from "../serverless-bot";
+import app from "../serverless-bot";
 
 export default app;
