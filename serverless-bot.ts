@@ -12,4 +12,6 @@ receiver.router.get('/', (_, res) => {
   res.send('ok')
 })
 
-export default receiver;
+const server = app.start(config.port);
+
+export default server
