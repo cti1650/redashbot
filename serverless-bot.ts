@@ -12,4 +12,4 @@ receiver.router.get('/', (_, res) => {
   res.send('ok')
 })
 
-export default app;
+export default receiver;
