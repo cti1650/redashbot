@@ -9,6 +9,8 @@ import {
 const slackLink = /<(?<type>[@#!])?(?<link>[^>|]+)(?:\|(?<label>[^>]+))?>/
 export function mention(): Middleware<SlackEventMiddlewareArgs<'message'>> {
   return async ({ message, context, next }) => {
+    console.log("message",message)
+    console.log("context",context)
     if (context.botUserId === undefined) {
       throw new ContextMissingPropertyError(
         'botUserId',
