@@ -17,6 +17,8 @@ receiver.router.get('/api', (_, res) => {
   res.send('ok')
 })
 
-module.exports = serverlessExpress({
+const server = serverlessExpress({
   app: receiver.app,
 });
+
+export default server;
